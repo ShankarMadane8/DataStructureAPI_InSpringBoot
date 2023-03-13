@@ -2,6 +2,7 @@ package com.humanCloud.controller;
 
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -24,7 +25,8 @@ import jakarta.servlet.http.HttpServletResponse;
 public class StackController {
 	
 	
-	CustomeStack stack=new CustomeStack();
+	@Autowired
+	CustomeStack stack;
 	
 	//----------------pushAPI-------------------
 	@PostMapping("/push")
