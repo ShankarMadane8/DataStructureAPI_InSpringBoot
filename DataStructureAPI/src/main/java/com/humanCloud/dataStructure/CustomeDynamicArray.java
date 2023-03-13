@@ -2,7 +2,9 @@ package com.humanCloud.dataStructure;
 
 import com.humanCloud.customeException.DynamicArrayIndexOutOfBoundException;
 import com.humanCloud.customeException.EmptyArrayException;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CustomeDynamicArray {
 	
 	private int[] array;
