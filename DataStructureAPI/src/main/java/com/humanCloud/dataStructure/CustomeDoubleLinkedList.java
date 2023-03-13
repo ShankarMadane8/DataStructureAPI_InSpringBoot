@@ -2,7 +2,9 @@ package com.humanCloud.dataStructure;
 
 import com.humanCloud.customeException.DoubleLinkedListIndexOutOfBoundException;
 import com.humanCloud.customeException.EmptyDoubleLinkedListException;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CustomeDoubleLinkedList {
 	
 	private Node head;
