@@ -1,7 +1,9 @@
 package com.humanCloud.dataStructure;
 
 import com.humanCloud.customeException.EmptyStackException;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CustomeStack {
 
 	private int dynamicSize;
