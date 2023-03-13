@@ -19,12 +19,14 @@ import com.humanCloud.dataStructure.CustomeDynamicArray;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import com.humanCloud.dataStructure.CustomeDynamicArray;
 
 @RestController
 @RequestMapping("/DataStructure/array")
 public class ArrayController {
 
-	CustomeDynamicArray array = new CustomeDynamicArray();
+	@Autowired
+	CustomeDynamicArray array;
 
 	// ---------------------------AppendIPI-------------------------------------
 	@PostMapping("/append")
